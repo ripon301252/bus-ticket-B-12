@@ -20,12 +20,12 @@ for (let seatBtn4 of SeatBtns4) {
         document.getElementById('grand-total-price').innerText = allSeatPrice;
 
         // seat-left
-        const seatLess = seatBtn1.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[2].children[2].children[0].children[0].children[0].children[1].children[0].children[1].children[0].children[0].innerText;
+        const seatLess = seatBtn4.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[2].children[2].children[0].children[0].children[0].children[1].children[0].children[1].children[0].children[0].innerText;
         const seatLeft = Number(seatLess) - 1
         document.getElementById('seat-left').innerText = seatLeft
 
         // Available-seat
-        const availableSeat = seatBtn1.parentNode.parentNode.parentNode.parentNode.children[1].children[1].children[0].children[0].children[0].children[0].children[0].innerText;
+        const availableSeat = seatBtn4.parentNode.parentNode.parentNode.parentNode.children[1].children[1].children[0].children[0].children[0].children[0].children[0].innerText;
         const haveSeat = Number(availableSeat) + 1;
         document.getElementById('seat-count').innerText = haveSeat;
 
@@ -41,3 +41,4 @@ for (let seatBtn4 of SeatBtns4) {
         seatContent4.appendChild(newSeatContent4)
     })
 }
+
